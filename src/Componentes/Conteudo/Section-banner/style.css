@@ -1,0 +1,65 @@
+.secao-fundo{
+  background-image: url('/public/assets/capa.png');
+  background-repeat: no-repeat;
+  background-size:cover, cover;
+  background-position: center, center;
+  height: 80vh;
+}
+
+.fundo-texto {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.fundo-texto h1, .fundo-texto p {
+  max-width: 500px;
+  font-family: 'Anybody', cursive;
+}
+
+.fundo-texto p{
+  font-size: 36px;
+  color: rgb(196, 196, 196)
+}
+
+.fundo-texto h1 {
+  font-size: 60px;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 70px;
+  letter-spacing: 5px;
+  
+}
+
+@media (max-width: 768px) {
+  .fundo-texto h1 {
+    font-size: 40px;
+    max-width:350px ;
+  }
+  .secao-fundo{
+    background-image: url('/public/assets/capa.png');
+    background-repeat: no-repeat;
+    background-size:cover, cover;
+    background-position: center, center;
+    height: 50vh;
+  }
+
+  .fundo-texto p{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px){
+  .secao-fundo {
+    background-position: 89% center;
+  }
+
+  .fundo-texto {
+    background-color: rgba(0,0,0,0.6);
+  }
+}
